@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+  <html>
+
+  <head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1 id="title">My first survey form</h1>
+    <p id="description">Да поможет мне бог</p>
+    <form id="survey-form" method="post" action='/'>
+      <fieldset>
+        <label id="name-label">Введите имя:
+          <input id="name" type="text" required maxlenght=35 placeholder="Имя">
+        </label>
+        <label id="email-label">Введите адрес эл. почты:
+          <input id="email" type="email" required placeholder="sample@domen.com">
+        </label>
+        <label id="number-label">Введите возраст:
+          <input id="number" type="number" min=18 max=120 placeholder="18+">
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Да или нет?
+          <select id="dropdown">
+            <option value="">Выберите вариант</option>
+
+            <option value="1">Да</option>
+            <option value="0">Нет</option>
+          </select>
+        </label>
+
+        <label>
+          <input class="inline" value="a" type="radio" name="one-of-lesser-evils">Точно
+        </label>
+        <label>
+          <input class="inline" value="b" type="radio" name="one-of-lesser-evils">Не точно
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>
+          <input class="inline" type="checkbox" value="1">Первый вариант
+        </label>
+        <label>
+          <input class="inline" type="checkbox" value="2">Второй вариант
+        </label>
+        <label>
+          <input class="inline" type="checkbox" value="3">Третий вариант
+        </label>
+        <label>
+          <textarea rows="3" cols="30" placeholder="Можно что-то ввести"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Отправить">
+    </form>
+  </body>
+
+  </html>
